@@ -2,9 +2,11 @@ package lib
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"runtime"
+	"strconv"
 )
 
 func ReadFileForDay(day int, fileName string) string {
@@ -18,4 +20,12 @@ func ReadFileForDay(day int, fileName string) string {
 		panic(err)
 	}
 	return string(data)
+}
+
+func ParseInt(s string) int {
+	value, err := strconv.Atoi(s)
+	if err != nil {
+		log.Fatalf("Cannot cast string '%s' to int", s)
+	}
+	return value
 }
