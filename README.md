@@ -17,7 +17,6 @@ Run a specific day's solution:
 
 ```bash
 go run ./cmd/day01
-go run ./cmd/day02
 ```
 
 Or build and run:
@@ -27,7 +26,15 @@ go build -o aoc ./cmd/day01
 ./aoc
 ```
 
+Run tests via:
+```bash
+go test ./...
+```
+
 ## Progress
 
-- Day 1 ✓
-- Day 2 ✓
+Each day contains two parts (✓)
+
+- Day 1 ✓✓
+- Day 2 ✓✓
+- Day 3 ✓✓
