@@ -8,7 +8,7 @@ import (
 	. "github.com/lucascott/advent-of-code-2025/lib"
 )
 
-func PartOne(inputFileName string) {
+func PartOne(inputFileName string) int {
 	input := ReadFileForDay(2, inputFileName)
 	ranges := parseRanges(input)
 	log.Print(ranges)
@@ -17,6 +17,7 @@ func PartOne(inputFileName string) {
 		sum += computeRangePartOne(range_)
 	}
 	log.Printf("Total sum: %d", sum)
+	return sum
 }
 
 func nextValue(v string) int {

@@ -9,7 +9,7 @@ import (
 
 var sliceSizesToCheck = map[int][]int{}
 
-func PartTwo(inputFileName string) {
+func PartTwo(inputFileName string) int {
 	input := ReadFileForDay(2, inputFileName)
 	ranges := parseRanges(input)
 	log.Print(ranges)
@@ -18,6 +18,7 @@ func PartTwo(inputFileName string) {
 		sum += computeRangePartTwo(range_)
 	}
 	log.Printf("Total sum: %d", sum)
+	return sum
 }
 
 func computeRangePartTwo(range_ Range) int {

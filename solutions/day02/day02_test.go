@@ -1,4 +1,4 @@
-package day03
+package day02
 
 import (
 	"testing"
@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-const day = 3
+const day = 2
 
 func TestPartOne(t *testing.T) {
 	var expected int

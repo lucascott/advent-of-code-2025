@@ -13,16 +13,18 @@ const (
 	initialPosition = 50
 )
 
-func PartOne(inputFileName string) {
+func PartOne(inputFileName string) int {
 	input := ReadFileForDay(1, inputFileName)
 	stopsAtZeroCount, _ := rotateKnob(input)
 	log.Printf("Stops at zero count = %d", stopsAtZeroCount)
+	return stopsAtZeroCount
 }
 
-func PartTwo(inputFileName string) {
+func PartTwo(inputFileName string) int {
 	input := ReadFileForDay(1, inputFileName)
 	_, passAcrossZeroCount := rotateKnob(input)
 	log.Printf("Pass across zero count = %d", passAcrossZeroCount)
+	return passAcrossZeroCount
 }
 
 func rotateKnob(input string) (int, int) {
