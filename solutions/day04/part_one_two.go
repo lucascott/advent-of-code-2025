@@ -124,7 +124,7 @@ func PartOne(inputFileName string) int {
 	accessibleRolls := findAccessibleRolls(&paperMap)
 	printMap(paperMap)
 	log.Println("")
-	//log.Printf("Total accessible rolls: %d", rolls)
+	log.Printf("Total accessible rolls: %d", accessibleRolls)
 	return accessibleRolls
 }
 
@@ -142,5 +142,6 @@ func PartTwo(inputFileName string) int {
 	}
 	printMap(paperMap)
 	log.Println("")
+	log.Printf("Total removed rolls: %d", totalRemovedRolls)
 	return totalRemovedRolls
 }
